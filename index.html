@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Pragya Singh | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+     <div class="bg-shapes">
+    	<span></span>
+    	<span></span>
+    	<span></span>
+    </div>
+
+    <header>
+        <h1>Pragya Singh</h1>
+        <p>Aspiring Software Developer & UI/UX Enthusiast</p>
+
+        <button id="themeBtn" onclick="toggleTheme()">
+    	     🌙 Dark Mode
+        
+        </button>
+        <button id="topBtn" onclick="topFunction()">
+                ↑
+        </button>
+
+    </header>
+
+    <div class="dashboard">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section class="hero">
+        <img src="images/profile.jpg" alt="Profile Photo">
+        <h2>Hello, I'm Pragya Singh</h2>
+        <p>
+            A CSE(AI & ML) student. Passionate about building innovative applications, creating modern designs, and learning new technologies.
+            I enjoy exploring software development, UI/UX design, artificial intelligence, and innovative digital solutions that solve real - 
+            world problems. 
+
+            I am constantly learning new technologies and building projects that help me grow as a devloper and designer. 
+            My interests include web development, mobile app development, AI-powered applications and creating user-friendly 
+            digital experiences. 
+   
+            Beyond coding, I enjoy writing blogs, poetry, quotes and doing drawing. My ideas basically based on technology and world. 
+
+            Welcome to my portfolio, where I showcase my journey, projects, skills and achievements. 
+            
+            
+        </p>
+
+        <a class="btn" href="files/resume.pdf" target="_blank">
+            Download Resume
+        </a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            A software development enthusiast interested in
+            web development, Flutter, UI/UX design, and AI-powered applications.
+            Also a part time Artist.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="card-container">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">Python</div>
+            <div class="card">Flutter</div>
+            <div class="card">UI/UX</div>
+            <div class="card">Figma</div>
+        </div>
+    </section>
+
+<section id="services">
+    <h2>Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h3>🌐 Web Development</h3>
+            <p>
+                Creating responsive and modern websites using HTML, CSS, JavaScript, and modern web technologies.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>📱 App Development</h3>
+            <p>
+                Designing and developing mobile applications with user-friendly interfaces and smooth experiences.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🎨 UI/UX Design</h3>
+            <p>
+                Designing clean, attractive, and intuitive user interfaces focused on user experience.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🤖 AI Solutions</h3>
+            <p>
+                Exploring AI-powered applications and intelligent solutions for real-world problems.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>AI Podcast Recommender</h3>
+            <p>
+                Suggests podcasts based on user interests using AI.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Smart City Dashboard</h3>
+            <p>
+                A futuristic city management dashboard concept.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Stock Trading App</h3>
+            <p>
+                Modern mobile application for stock market trading.
+            </p>
+        </div>
+    </section>
+
+    <section id="blogs">
+          <h2>Blogs</h2>
+
+               <div class="blog-card">
+                     <h3>Vibe Coding Can Kill Real Coding Skills</h3>
+               <p>
+                    Exploring how Vibe Code is able to destroy Coding Generation.
+               </p>
+               </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>Email: singhpragya1682006@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/pragya-singh-141824317/</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Pragya Singh. All Rights Reserved.</p>
+    </footer>
+
+<script>
+function toggleTheme(){
+
+    document.body.classList.toggle("light-mode");
+
+    let btn = document.getElementById("themeBtn");
+
+    if(document.body.classList.contains("light-mode")){
+        btn.innerHTML = "☀️ Light Mode";
+    }else{
+        btn.innerHTML = "🌙 Dark Mode";
+    }
+}
+</script>
+
+<script>
+    let mybutton = document.getElementById("topBtn");
+
+     window.onscroll = function() {
+     scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 ||
+            document.documentElement.scrollTop > 200) {
+
+             mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+      }
+     }
+
+   function topFunction() {
+        window.scrollTo({
+         top: 0,
+         behavior: "smooth"
+    });
+  }
+</script>
+
+</body>
+</html>
