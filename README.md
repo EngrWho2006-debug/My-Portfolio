@@ -4,7 +4,7 @@ Welcome to my personal portfolio website.
 ## About Me
 I am passionate about web development, UI/UX design, and building innovative technology solutions.
 
-## Features
+##✨Features
 - Responsive Design
 - About Me Section
 - Skills Showcase
@@ -13,13 +13,13 @@ I am passionate about web development, UI/UX design, and building innovative tec
 - Blogs
 - Contact Form
 
-## Technologies Used
+##🛠️Technologies Used
 - HTML
 - CSS
 - JavaScript
 
-## Live Demo
+##🌐Live Demo
 my-portfolio-one-mu-22.vercel.app
 
-## Author
+##✒️Author
 Pragya Singh
